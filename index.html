@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>আমার বাগান – ফুল ও ফল নার্সারি | নাঈম এগ্রো, গাজীপুর</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Hind+Siliguri:wght@300;400;600;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="showSection('home')" style="cursor:pointer">
+      <img src="assets/logo.png" alt="আমার বাগান লোগো" class="nav-logo-img"/>
+      <div class="logo-text">
+        <span class="logo-main">আমার বাগান</span>
+        <span class="logo-sub">ফুল ও ফল নার্সারি  —নাঈম এগ্রো, পশ্চিম চতর, ২৪ নং ওয়ার্ড, গাজীপুর</span>
+      </div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" onclick="showSection('home');return false">হোম</a></li>
+      <li><a href="#" onclick="showSection('about');return false">আমাদের সম্পর্কে</a></li>
+      <li><a href="#" onclick="showSection('fruits');return false">ফলের গাছ</a></li>
+      <li><a href="#" onclick="showSection('services');return false">আমাদের সেবা</a></li>
+      <li><a href="#" onclick="showSection('care');return false">বাগান গাইড</a></li>
+      <li><a href="#" onclick="showSection('shop');return false">শপ</a></li>
+      <li><a href="#" onclick="showSection('gallery');return false">গ্যালারি</a></li>
+      <li><a href="#" onclick="showSection('contact');return false">যোগাযোগ</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== PAGE SECTIONS (SPA) ===== -->
+<div id="spa-wrapper">
+
+<!-- ===== HOME ===== -->
+<section id="sec-home" class="spa-section active">
+  <div class="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-content">
+      <div class="hero-logo-wrap">
+        <img src="assets/logo.png" alt="আমার বাগান লোগো" class="hero-logo"/>
+      </div>
+      <div class="hero-badge">🌱 সবুজের যত্নে, আপনার পাশে, নাঈম এগ্রো</div>
+      <h1 class="hero-title">
+        আমার বাগান<br/>
+        <span class="hero-accent">ফুল ও ফল নার্সারি</span>
+      </h1>
+      <p class="hero-tagline">ফুল, ফল ও ছাদ বাগানের সকল সমাধান</p>
+      <p class="hero-bangla">🌿 "সবুজের যত্নে, আপনার বিশ্বস্ত সঙ্গী"</p>
+      <div class="hero-location">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        নাঈম এগ্রো, গাজীপুর, বাংলাদেশ
+      </div>
+      <div class="hero-cta">
+        <button class="btn btn-primary" onclick="showSection('fruits')">চারাগাছের তালিকা</button>
+        <button class="btn btn-outline" onclick="showSection('services')">আমাদের সেবা</button>
+        <button class="btn btn-shop" onclick="showSection('shop')">শপ দেখুন</button>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">৫০+</span>
+        <span class="stat-label">চারার জাত</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">১০০%</span>
+        <span class="stat-label">জৈব পণ্য</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">৫০০+</span>
+        <span class="stat-label">সন্তুষ্ট গ্রাহক</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">বিনামূল্যে</span>
+        <span class="stat-label">বাগান পরামর্শ</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="sec-about" class="spa-section">
+  <div class="section-page">
+    <div class="container">
+      <div class="section-label">আমাদের সম্পর্কে</div>
+      <h2 class="section-title">আমরা কারা</h2>
+      <div class="about-grid">
+        <div class="about-main">
+          <p class="about-lead">আমার বাগান ফুল ও ফল নার্সারি গাজীপুর, বাংলাদেশে অবস্থিত একটি বিশ্বস্ত নার্সারি। আমরা শুধু গাছ বিক্রি করি না — দেশীয় প্রজাতির গাছের প্রসার ও আধুনিক প্রযুক্তির মাধ্যমে ভবিষ্যৎ প্রজন্মকে পরিবেশবান্ধব সমাজ উপহার দিতে কাজ করি।</p>
+          <p>আমাদের লক্ষ্য হলো আপনার ছাদ ও আঙ্গিনাকে গড়ে তোলা <strong>ফল ও ফুলের স্বর্গে</strong>। আমরা প্রদান করি আধুনিক প্রযুক্তিনির্ভর কৃষি সমাধান — ড্রিপ ইরিগেশন থেকে শুরু করে জৈব সার পর্যন্ত।</p>
+          <p>আমাদের অভিজ্ঞ দল আপনাকে সঠিক গাছ বেছে নিতে, সঠিকভাবে পরিচর্যা করতে এবং সফলভাবে ছাদ বাগান তৈরি করতে সর্বদা সহায়তা করবে।</p>
+          <div class="about-logo-row">
+            <img src="assets/logo.png" alt="আমার বাগান লোগো" class="about-logo"/>
+            <div>
+              <p><strong>আমার বাগান – ফুল ও ফল নার্সারি</strong></p>
+              <p>পশ্চিম চতর, ২৪ নং ওয়ার্ড, গাজীপুর, ঢাকা বিভাগ, বাংলাদেশ</p>
+              <p>🌱 সবুজের যত্নে, আপনার পাশে</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="about-card">
+            <div class="about-card-icon">🌱</div>
+            <h3>উন্নত জাতের চারা</h3>
+            <p>দেশি-বিদেশি কলম ও হাইব্রিড চারা সর্বোচ্চ মান নিশ্চিত করে সরবরাহ।</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🪴</div>
+            <h3>স্মার্ট ছাদ বাগান</h3>
+            <p>অটোমেটেড ড্রিপ ইরিগেশন ও সম্পূর্ণ সেটআপ সেবা প্রদান।</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🌾</div>
+            <h3>জৈব কৃষি সমাধান</h3>
+            <p>শতভাগ প্রাকৃতিক সার ও জৈব কীটনাশক ব্যবহার করি।</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">👨‍🌾</div>
+            <h3>বিশেষজ্ঞ পরামর্শ</h3>
+            <p>অভিজ্ঞ মালি ও কৃষিবিদদের বিনামূল্যে পরামর্শ সেবা।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FRUIT TREES ===== -->
+<section id="sec-fruits" class="spa-section">
+  <div class="section-page">
+    <div class="container">
+      <div class="section-label">চারাগাছের তালিকা</div>
+      <h2 class="section-title">সেরা ফলের গাছ</h2>
+      <p class="section-subtitle">আমাদের বিশেষ ফলের গাছের সংগ্রহ — সেরা মান, সঠিক মূল্য</p>
+      <div class="bteb-grid">
+        <div class="bteb-card">
+          <div class="bteb-num">০১</div>
+          <div class="bteb-icon">🥭</div>
+          <h3>বারোমাসি আম</h3>
+          <p class="bteb-bangla">উন্নত কলম জাত — সারাবছর ফলন</p>
+          <div class="bteb-details">
+            <div class="bteb-detail"><span>মূল্য</span><strong>৳ ২০০–৫০০</strong></div>
+            <div class="bteb-detail"><span>চাষের সময়</span><strong>মার্চ–জুন</strong></div>
+            <div class="bteb-detail"><span>বিশেষত্ব</span><strong>ভিটামিন A ও C সমৃদ্ধ</strong></div>
+          </div>
+          <ul class="bteb-topics">
+            <li>বারোমাসি উন্নত কলম জাত</li>
+            <li>১–২ বছরের মধ্যে ফলন শুরু</li>
+            <li>ছাদ বাগানের জন্য উপযুক্ত</li>
+            <li>কম জায়গায় বেশি ফলন</li>
+          </ul>
+          <button class="btn btn-primary btn-full" style="margin-top:18px" onclick="contactAbout('বারোমাসি আম চারা')">অর্ডার করুন</button>
+        </div>
+        <div class="bteb-card">
+          <div class="bteb-num">০২</div>
+          <div class="bteb-icon">🍋</div>
+          <h3>সিডলেস লেবু</h3>
+          <p class="bteb-bangla">বীজমুক্ত লেবু — সারাবছর ফলন</p>
+          <div class="bteb-details">
+            <div class="bteb-detail"><span>মূল্য</span><strong>৳ ১০০–২৫০</strong></div>
+            <div class="bteb-detail"><span>চাষের সময়</span><strong>সারাবছর</strong></div>
+            <div class="bteb-detail"><span>বিশেষত্ব</span><strong>উচ্চ রোগ প্রতিরোধ ক্ষমতা</strong></div>
+          </div>
+          <ul class="bteb-topics">
+            <li>বীজমুক্ত, সহজ ব্যবহার</li>
+            <li>সারাবছর ফলন দেয়</li>
+            <li>পাত্রে ও মাটিতে দুটোতেই চাষ</li>
+            <li>রোগ প্রতিরোধ ক্ষমতা বেশি</li>
+          </ul>
+          <button class="btn btn-primary btn-full" style="margin-top:18px" onclick="contactAbout('সিডলেস লেবু চারা')">অর্ডার করুন</button>
+        </div>
+        <div class="bteb-card">
+          <div class="bteb-num">০৩</div>
+          <div class="bteb-icon">🐉</div>
+          <h3>ড্রাগন ফল</h3>
+          <p class="bteb-bangla">কম পানিতে দ্রুত ফলন</p>
+          <div class="bteb-details">
+            <div class="bteb-detail"><span>মূল্য</span><strong>৳ ২০০–৪০০</strong></div>
+            <div class="bteb-detail"><span>চাষের সময়</span><strong>এপ্রিল–জুন</strong></div>
+            <div class="bteb-detail"><span>বিশেষত্ব</span><strong>কম পানিতে দ্রুত ফলন</strong></div>
+          </div>
+          <ul class="bteb-topics">
+            <li>খরাসহিষ্ণু, কম সেচ প্রয়োজন</li>
+            <li>লাল ও সাদা জাত পাওয়া যায়</li>
+            <li>ছাদ বাগানে দারুণ উপযুক্ত</li>
+            <li>বাণিজ্যিক চাষে অত্যন্ত লাভজনক</li>
+          </ul>
+          <button class="btn btn-primary btn-full" style="margin-top:18px" onclick="contactAbout('ড্রাগন ফল চারা')">অর্ডার করুন</button>
+        </div>
+        <div class="bteb-card">
+          <div class="bteb-num">০৪</div>
+          <div class="bteb-icon">🍊</div>
+          <h3>উন্নত মাল্টা</h3>
+          <p class="bteb-bangla">সুমিষ্ট ও রসালো শীতকালীন ফল</p>
+          <div class="bteb-details">
+            <div class="bteb-detail"><span>মূল্য</span><strong>৳ ২৫০–৬০০</strong></div>
+            <div class="bteb-detail"><span>চাষের সময়</span><strong>শীতকাল</strong></div>
+            <div class="bteb-detail"><span>বিশেষত্ব</span><strong>সুমিষ্ট ও রসালো</strong></div>
+          </div>
+          <ul class="bteb-topics">
+            <li>উন্নত জাতের কলম চারা</li>
+            <li>ভিটামিন C সমৃদ্ধ</li>
+            <li>শীতকালীন ফল, বাজারে চাহিদা বেশি</li>
+            <li>দীর্ঘস্থায়ী গাছ, বহু বছর ফল দেয়</li>
+          </ul>
+          <button class="btn btn-primary btn-full" style="margin-top:18px" onclick="contactAbout('মাল্টা চারা')">অর্ডার করুন</button>
+        </div>
+      </div>
+      <div class="bteb-note">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        সকল চারা উন্নত মানের ও রোগমুক্ত। ফুলের গাছসহ আরও অনেক জাত আমাদের কাছে পাওয়া যায়। বিস্তারিত জানতে যোগাযোগ করুন।
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="sec-services" class="spa-section">
+  <div class="section-page itrd-bg">
+    <div class="container">
+      <div class="section-label">আমাদের সেবা সমূহ</div>
+      <h2 class="section-title" style="color:#fff">বিশেষ সেবা</h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,.6)">সবুজ বাংলাদেশ গড়তে আমরা আপনার পাশে</p>
+      <div class="itrd-intro">
+        <p>আমার বাগান শুধু একটি নার্সারি নয় — এটি আপনার বাগানের সম্পূর্ণ সমাধান কেন্দ্র। বাগান তৈরি থেকে শুরু করে নিয়মিত পরিচর্যা পর্যন্ত, আমরা আপনার সাথে প্রতিটি পদক্ষেপে আছি।</p>
+      </div>
+      <div class="itrd-features">
+        <div class="itrd-feature">
+          <div class="itrd-feature-icon">🌱</div>
+          <h4>উন্নত জাতের চারা</h4>
+          <p>দেশি-বিদেশি কলম ও হাইব্রিড চারা সর্বোচ্চ মান নিশ্চিত করে সরবরাহ করা হয়।</p>
+        </div>
+        <div class="itrd-feature">
+          <div class="itrd-feature-icon">🪴</div>
+          <h4>স্মার্ট ছাদ বাগান</h4>
+          <p>অটোমেটেড ড্রিপ ইরিগেশন সহ সম্পূর্ণ ছাদ বাগান সেটআপ সেবা প্রদান।</p>
+        </div>
+        <div class="itrd-feature">
+          <div class="itrd-feature-icon">🌾</div>
+          <h4>জৈব কৃষি সমাধান</h4>
+          <p>শতভাগ প্রাকৃতিক সার ও পরিবেশবান্ধব জৈব কীটনাশক ব্যবহার করা হয়।</p>
+        </div>
+        <div class="itrd-feature">
+          <div class="itrd-feature-icon">👨‍🌾</div>
+          <h4>বিশেষজ্ঞ পরামর্শ</h4>
+          <p>অভিজ্ঞ মালি ও কৃষিবিদদের বিনামূল্যে পরামর্শ সেবা পাওয়া যায়।</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px">
+        <button class="btn btn-primary" onclick="showSection('shop')">শপ দেখুন</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CARE GUIDE ===== -->
+<section id="sec-care" class="spa-section">
+  <div class="section-page" style="background:var(--off-white)">
+    <div class="container">
+      <div class="section-label">স্মার্ট কেয়ার গাইড</div>
+      <h2 class="section-title">আপনার বাগানের যত্ন</h2>
+      <p class="section-subtitle">সঠিক পরিচর্যায় আপনার গাছ সুস্থ ও ফলনশীল থাকবে</p>
+
+      <!-- Quick tips -->
+      <div class="bteb-grid" style="margin-bottom:44px">
+        <div class="bteb-card">
+          <div class="bteb-icon">☀️</div>
+          <h3>আলো</h3>
+          <p class="bteb-bangla">প্রতিদিন পর্যাপ্ত সূর্যালোক নিশ্চিত করুন</p>
+          <ul class="bteb-topics">
+            <li>ফলের গাছ: প্রতিদিন ৬+ ঘণ্টা রোদ</li>
+            <li>ফুলের গাছ: ৪–৬ ঘণ্টা রোদ</li>
+            <li>ইনডোর গাছ: পরোক্ষ আলো যথেষ্ট</li>
+            <li>ছায়া পড়লে গাছ সরিয়ে দিন</li>
+          </ul>
+        </div>
+        <div class="bteb-card">
+          <div class="bteb-icon">💧</div>
+          <h3>সেচ ও পানি</h3>
+          <p class="bteb-bangla">গাছের গোড়া শুকিয়ে গেলে পানি দিন</p>
+          <ul class="bteb-topics">
+            <li>ড্রিপ ইরিগেশন সবচেয়ে কার্যকর</li>
+            <li>অতিরিক্ত পানি দেওয়া ক্ষতিকর</li>
+            <li>সকালে পানি দেওয়া সবচেয়ে ভালো</li>
+            <li>পাতায় পানি না দিয়ে গোড়ায় দিন</li>
+          </ul>
+        </div>
+        <div class="bteb-card">
+          <div class="bteb-icon">🍃</div>
+          <h3>পুষ্টি ও সার</h3>
+          <p class="bteb-bangla">প্রতি মাসে একবার জৈব সার ব্যবহার করুন</p>
+          <ul class="bteb-topics">
+            <li>জৈব কম্পোস্ট সবচেয়ে ভালো</li>
+            <li>ভার্মি কম্পোস্ট দ্রুত কাজ করে</li>
+            <li>রাসায়নিক সার কম ব্যবহার করুন</li>
+            <li>নতুন চারায় বেশি সার দেবেন না</li>
+          </ul>
+        </div>
+        <div class="bteb-card">
+          <div class="bteb-icon">🛡️</div>
+          <h3>রোগ ও পোকা দমন</h3>
+          <p class="bteb-bangla">প্রাকৃতিক উপায়ে কীটনাশক ব্যবহার করুন</p>
+          <ul class="bteb-topics">
+            <li>নিমের তেল সবচেয়ে কার্যকর</li>
+            <li>জৈব কীটনাশক পরিবেশবান্ধব</li>
+            <li>রোগাক্রান্ত পাতা কেটে ফেলুন</li>
+            <li>গাছের চারপাশ পরিষ্কার রাখুন</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-label" style="margin-bottom:20px">গাছ ভিত্তিক গাইড</div>
+      <div class="training-grid" id="trainingGrid"></div>
+      <div class="training-note">
+        <strong>বিনামূল্যে পরামর্শ</strong> — আমাদের অভিজ্ঞ দলের কাছ থেকে আপনার বাগানের জন্য বিশেষ পরামর্শ নিন। WhatsApp বা Facebook-এ যোগাযোগ করুন।
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SHOP ===== -->
+<section id="sec-shop" class="spa-section">
+  <div class="section-page">
+    <div class="container">
+      <div class="section-label">আমার বাগান শপ</div>
+      <h2 class="section-title">চারা, সার ও বাগান সরঞ্জাম</h2>
+      <p class="section-subtitle">যেকোনো পণ্যে ক্লিক করে WhatsApp বা Messenger-এ অর্ডার করুন</p>
+
+      <!-- Category filter -->
+      <div class="shop-filter" id="shopFilter"></div>
+
+      <!-- Product grid -->
+      <div class="product-grid" id="productGrid"></div>
+
+      <div class="shop-note">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        মূল্য পরিবর্তনশীল। স্টক পরিবর্তন হতে পারে। অর্ডার নিশ্চিত করতে WhatsApp বা Facebook Messenger-এ যোগাযোগ করুন।
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="sec-gallery" class="spa-section">
+  <div class="section-page" style="background:var(--forest)">
+    <div class="container">
+      <div class="section-label">ফটো গ্যালারি</div>
+      <h2 class="section-title" style="color:#fff">আমাদের বাগান ও নার্সারি</h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,.6)">আমাদের নার্সারি ও সফল ছাদ বাগানের ছবি</p>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="sec-contact" class="spa-section">
+  <div class="section-page" style="background:var(--off-white)">
+    <div class="container">
+      <div class="section-label">যোগাযোগ করুন</div>
+      <h2 class="section-title">আমাদের সাথে কথা বলুন</h2>
+      <div class="contact-grid">
+
+        <!-- Left: info + direct buttons -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>ঠিকানা</strong>
+              <p>আমার বাগান – ফুল ও ফল নার্সারি<br/>নাঈম এগ্রো, হাউস নং: GCC-201/1 (CB-55 /177), পশ্চিম চতর, পোস্ট অফিস: BOF-1703, ২৪ নং ওয়ার্ড, গাজীপুর সিটি, ঢাকা বিভাগ, বাংলাদেশ।  মোবাইল: 01601268502, Email: nayeemtorofder696@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🌱</div>
+            <div>
+              <strong>আমাদের মিশন</strong>
+              <p>সবুজের যত্নে, আপনার বিশ্বস্ত সঙ্গী</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">⏰</div>
+            <div>
+              <strong>সময়সূচি</strong>
+              <p>শনি–বৃহস্পতি: সকাল ৮টা – রাত ৮টা<br/>শুক্রবার: সকাল ৯টা – বিকাল ৫টা</p>
+            </div>
+          </div>
+
+          <!-- Direct contact buttons -->
+          <div class="direct-contact-title">সরাসরি যোগাযোগ করুন</div>
+          <div class="direct-btns">
+            <a href="https://wa.me/8801818713364?text=হ্যালো%20নাঈম%20এগ্রো,%20আমার%20বাগান!%20আমি%20গাছ%20বা%20বাগান%20সম্পর্কে%20জানতে%20চাই।" target="_blank" class="direct-btn wa-btn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp-এ যোগাযোগ
+            </a>
+            <a href="https://m.me/nayeemagro1" target="_blank" class="direct-btn fb-btn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M11.5 2C6.813 2 3 5.813 3 10.5c0 4.196 2.947 7.698 6.879 8.377V13.75H7.625v-2.5h2.254V9.477c0-2.22 1.322-3.454 3.347-3.454.97 0 1.985.171 1.985.171v2.186h-1.118c-1.101 0-1.444.684-1.444 1.383v1.487h2.458l-.393 2.5h-2.065V18.9C18.053 18.22 21 14.7 21 10.5 21 5.813 17.187 2 11.5 2z"/></svg>
+              Facebook Messenger
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: contact form -->
+        <div class="contact-form">
+          <h3>বার্তা পাঠান</h3>
+          <p class="form-intro">ফর্মটি পূরণ করুন — আপনার বার্তা <strong>WhatsApp</strong> বা <strong>Facebook Messenger</strong>-এ পাঠানো হবে।</p>
+          <form id="contactForm" onsubmit="return false;">
+            <div class="form-group">
+              <label for="cName">আপনার নাম</label>
+              <input type="text" id="cName" placeholder="আপনার নাম লিখুন" required/>
+            </div>
+            <div class="form-group">
+              <label for="cPhone">ফোন নম্বর</label>
+              <input type="tel" id="cPhone" placeholder="01XXXXXXXXX" required/>
+            </div>
+            <div class="form-group">
+              <label for="cInterest">আপনার প্রয়োজন</label>
+              <select id="cInterest">
+                <option value="">বেছে নিন...</option>
+                <option>বারোমাসি আম চারা</option>
+                <option>সিডলেস লেবু চারা</option>
+                <option>ড্রাগন ফল চারা</option>
+                <option>মাল্টা চারা</option>
+                <option>ফুলের গাছ</option>
+                <option>জৈব সার ও কম্পোস্ট</option>
+                <option>ড্রিপ ইরিগেশন সেটআপ</option>
+                <option>ছাদ বাগান পরামর্শ</option>
+                <option>বাগান সরঞ্জাম</option>
+                <option>সাধারণ জিজ্ঞাসা</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cMsg">বার্তা</label>
+              <textarea id="cMsg" rows="4" placeholder="আপনার প্রশ্ন বা বার্তা লিখুন..."></textarea>
+            </div>
+            <div class="form-send-btns">
+              <button type="button" class="btn send-wa-btn" onclick="sendViaWhatsApp()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp-এ পাঠান
+              </button>
+              <button type="button" class="btn send-fb-btn" onclick="sendViaFacebook()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.5 2C6.813 2 3 5.813 3 10.5c0 4.196 2.947 7.698 6.879 8.377V13.75H7.625v-2.5h2.254V9.477c0-2.22 1.322-3.454 3.347-3.454.97 0 1.985.171 1.985.171v2.186h-1.118c-1.101 0-1.444.684-1.444 1.383v1.487h2.458l-.393 2.5h-2.065V18.9C18.053 18.22 21 14.7 21 10.5 21 5.813 17.187 2 11.5 2z"/></svg>
+                Messenger-এ পাঠান
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- end spa-wrapper -->
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose">✕</button>
+  <button class="lb-prev" id="lbPrev">&#8249;</button>
+  <button class="lb-next" id="lbNext">&#8250;</button>
+  <img src="" alt="" id="lbImg"/>
+  <div class="lb-counter" id="lbCounter"></div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <img src="assets/logo.png" alt="আমার বাগান লোগো" class="footer-logo-img"/>
+          <div>
+            <strong>আমার বাগান – ফুল ও ফল নার্সারি</strong>
+            <small>নাঈম এগ্রো, গাজীপুর, বাংলাদেশ</small>
+            <small>মোবাইল: 01601268502</small>
+
+          </div>
+        </div>
+        <p>সবুজের যত্নে, আপনার বিশ্বস্ত সঙ্গী</p>
+        <p class="footer-bangla">🌱 ফুল, ফল ও ছাদ বাগানের সকল সমাধান</p>
+        <div class="footer-social">
+          <a href="https://wa.me/8801601268502" target="_blank" class="footer-social-btn wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://www.facebook.com/nayeemagro1" target="_blank" class="footer-social-btn fb">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>দ্রুত লিংক</h4>
+        <ul>
+          <li><a href="#" onclick="showSection('home');return false">হোম</a></li>
+          <li><a href="#" onclick="showSection('about');return false">আমাদের সম্পর্কে</a></li>
+          <li><a href="#" onclick="showSection('fruits');return false">ফলের গাছ</a></li>
+          <li><a href="#" onclick="showSection('services');return false">আমাদের সেবা</a></li>
+          <li><a href="#" onclick="showSection('care');return false">বাগান গাইড</a></li>
+          <li><a href="#" onclick="showSection('shop');return false">শপ</a></li>
+          <li><a href="#" onclick="showSection('gallery');return false">গ্যালারি</a></li>
+          <li><a href="#" onclick="showSection('contact');return false">যোগাযোগ</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>যোগাযোগ</h4>
+        <ul>
+          <li><span>নাঈম এগ্রো, হাউস নং: GCC-201/1 (CB-55 /177), পশ্চিম চতর, পোস্ট অফিস: BOF-1703, ২৪ নং ওয়ার্ড, গাজীপুর সিটি, ঢাকা বিভাগ, বাংলাদেশ। </span></li>
+          <li><span>শনি–বৃহস্পতি: ৮টা–৮টা</span></li>
+          <li><a href="https://wa.me/01601268502" target="_blank">WhatsApp</a></li>
+          <li><a href="https://www.facebook.com/nayeemagro1" target="_blank">Facebook পেজ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; ২০২৬ আমার বাগান – ফুল ও ফল নার্সারি, নাঈম এগ্রো, গাজীপুর। সর্বস্বত্ব সংরক্ষিত। সাইটটি নির্মাণাধীন — তথ্য যাচাই করে অর্ডার করুন।</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script src="main.js"></script>
+</body>
+</html>
